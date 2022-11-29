@@ -16,8 +16,9 @@ if (fs.existsSync("_")){
   // Delete the _ directory
   fs.rmSync("_", { recursive: true, force: true });
   // Recreate the _ directory
-  fs.mkdirSync("_")
 }
+
+fs.mkdirSync("_");
 
 Object.entries(linksJson).forEach(([key, value]) => {
   const data = template(value)
