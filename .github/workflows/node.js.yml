@@ -29,10 +29,19 @@ jobs:
     - run: npm install
     - run: npm start
 
-    - name: Add & Commit
-      uses: EndBug/add-and-commit@v9.1.1
-      with:
-        add: "./_ --force" # optional, default is .
-        push: origin gh-pages --force 
+    - name: Push
+      uses: s0/git-publish-subdir-action@develop
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO: self
+        BRANCH: gh-pages # The branch name where you want to push the assets
+        FOLDER: _ # The directory where your assets are generated
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+        MESSAGE: "Build: ({sha}) {msg}" # The commit message
+
+    # - name: Add & Commit
+    #   uses: EndBug/add-and-commit@v9.1.1
+    #   with:
+    #     add: "./_ --force" # optional, default is .
+    #     push: origin gh-pages --force 
+    #   env:
+    #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
