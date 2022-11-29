@@ -1,0 +1,28 @@
+{
+  "name": "ssc-shorten",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/update.mjs",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node --experimental-modules src/update.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbachmann/ssc-shorten.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbachmann/ssc-shorten/issues"
+  },
+  "homepage": "https://github.com/jbachmann/ssc-shorten#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5"
+  }
+}
