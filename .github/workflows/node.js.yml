@@ -32,6 +32,6 @@ jobs:
     - name: Add & Commit
       uses: EndBug/add-and-commit@v9.1.1
       with:
-        add: "_" # optional, default is .
+        add: "./_ --force" # optional, default is .
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
