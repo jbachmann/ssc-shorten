@@ -1,26 +1,24 @@
 {
-  "name": "sssnakes",
+  "name": "ssc-shorten",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/update.mjs",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node --experimental-modules update.mjs",
-    "start_legacy": "node --experimental-modules update_legacy.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --experimental-modules src/update.mjs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jbachmann/sssnakes.git"
+    "url": "git+https://github.com/jbachmann/ssc-shorten.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jbachmann/sssnakes/issues"
+    "url": "https://github.com/jbachmann/ssc-shorten/issues"
   },
-  "homepage": "https://github.com/jbachmann/sssnakes#readme",
+  "homepage": "https://github.com/jbachmann/ssc-shorten#readme",
   "dependencies": {
     "js-yaml": "^4.1.0"
   },
