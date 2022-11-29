@@ -2,12 +2,12 @@
   "name": "ssc-shorten",
   "version": "1.0.0",
   "description": "",
-  "main": "src/update.mjs",
+  "main": "update.mjs",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "start": "node --experimental-modules src/update.mjs"
+    "start": "node --experimental-modules build.mjs"
   },
   "repository": {
     "type": "git",

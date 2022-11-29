@@ -1,7 +1,7 @@
 import fs from "fs";
 import { load } from "js-yaml"
 
-const LINKS_FILE_NAME = "src/shorten.yaml";
+const LINKS_FILE_NAME = "shorten.yaml";
 
 const template = (location) =>
   `<html><head><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" /><meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Expires" content="0" /><meta http-equiv="REFRESH" content="0;url=${location}"/></head><body></body></html>`;
