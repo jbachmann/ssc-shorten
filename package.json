@@ -1,0 +1,30 @@
+{
+  "name": "sssnakes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node --experimental-modules update.mjs",
+    "start_legacy": "node --experimental-modules update_legacy.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbachmann/sssnakes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbachmann/sssnakes/issues"
+  },
+  "homepage": "https://github.com/jbachmann/sssnakes#readme",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5"
+  }
+}
