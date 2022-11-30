@@ -33,6 +33,7 @@ jobs:
       with:
         input_file: './public/shorten.yaml'
         output_folder: './build'
+        custom_cname: 'tldr.ssc.tools'
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
