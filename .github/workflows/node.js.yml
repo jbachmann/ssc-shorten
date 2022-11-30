@@ -29,7 +29,7 @@ jobs:
     # - run: npm install
     # - run: npm start
     - name: SSC Shorten Expander
-      uses: jbachmann/ssc-shorten-action@master 
+      uses: jbachmann/ssc-shorten-action@main 
       with:
         input_file: './src/shorten.yaml'
         output_folder: './build'
