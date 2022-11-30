@@ -31,7 +31,7 @@ jobs:
     - name: SSC Shorten Expander
       uses: jbachmann/ssc-shorten-action@main 
       with:
-        input_file: './src/shorten.yaml'
+        input_file: './public/shorten.yaml'
         output_folder: './build'
 
     - name: Push
