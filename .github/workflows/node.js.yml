@@ -30,9 +30,9 @@ jobs:
     # - run: npm start
     - name: SSC Shorten Expander
       uses: jbachmann/ssc-shorten-action@master 
-        with:
-          input_file: './src/shorten.yaml'
-          output_folder: './build'
+      with:
+        input_file: './src/shorten.yaml'
+        output_folder: './build'
 
     - name: Push
       uses: s0/git-publish-subdir-action@develop
